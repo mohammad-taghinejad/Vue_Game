@@ -1,0 +1,54 @@
+#app {
+  text-align: center;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+  color: lawngreen;
+  font-family: iransans, tahoma !important;
+  transition: all linear 0.3s;
+}
+
+.imgSection img {
+  width: auto;
+  height: 400px;
+  cursor: pointer;
+}
+
+progress[value] {
+  background: #eeeeee;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25)inset;
+}
+progress {
+  width: 30%;
+  height: 30px;
+}
+
+progress::-webkit-progress-value {
+  background: brown;
+}
+
+button {
+  background: brown;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: lawngreen;
+  font-family: iransans, tahoma !important;
+  font-size: 35px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+button:hover{
+  background: lawngreen;
+  color: brown;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vue Game</title>
+</head>
+
+<body style="direction:rtl;">
+    <div id="app">
+        <br>
+        <div class="titleSection">
+            <h1>{{title}}</h1>
+        </div>
+        <div class="imgSection" @click="damage==0?playSound(finalKick):playSound(kick)">
+            <img :src="damage==0?badImage:goodImage" @click="damageDown()">
+        </div>
+        <br>
+        <div class="damageSection">
+            <progress :value="damage" max="100" style="direction:ltr"></progress>
+        </div>
+        <br>
+        <br>
+        <button @click="[damage = 100, title = 'بیا از نو بازی کنیم']">دوباره تخفیف میخوام</button>
+    </div>
+    <script src="./script/vue.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
